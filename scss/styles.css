@@ -44,7 +44,7 @@
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 95%;
-    max-width: 1180px; }
+    max-width: 100vw; }
 
   .col-md-1 {
     width: 8.3333333333%; }
@@ -84,7 +84,7 @@
 @media only screen and (min-width: 991px) {
   .wrapper {
     width: 95%;
-    max-width: 1180px; }
+    max-width: 100vw; }
 
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -150,6 +150,13 @@ header, nav, section, footer {
 img {
   max-width: 100%; }
 
+h1 {
+  text-align: center; }
+
+li {
+  list-style: none;
+  display: inline; }
+
 /**
  * Basic typography style for copy text
  */
@@ -180,7 +187,7 @@ img {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 100vw;
   /* 1 */
   margin-left: auto;
   /* 2 */
