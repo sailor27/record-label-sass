@@ -7,52 +7,40 @@
     width: 100%; }
 
   .col-1 {
-    width: 8.3333333333%;
-    background-color: palevioletred; }
+    width: 8.3333333333%; }
 
   .col-2 {
-    width: 16.6666666667%;
-    background-color: palevioletred; }
+    width: 16.6666666667%; }
 
   .col-3 {
-    width: 25%;
-    background-color: palevioletred; }
+    width: 25%; }
 
   .col-4 {
-    width: 33.3333333333%;
-    background-color: palevioletred; }
+    width: 33.3333333333%; }
 
   .col-5 {
-    width: 41.6666666667%;
-    background-color: palevioletred; }
+    width: 41.6666666667%; }
 
   .col-6 {
-    width: 50%;
-    background-color: palevioletred; }
+    width: 50%; }
 
   .col-7 {
-    width: 58.3333333333%;
-    background-color: palevioletred; }
+    width: 58.3333333333%; }
 
   .col-8 {
-    width: 66.6666666667%;
-    background-color: palevioletred; }
+    width: 66.6666666667%; }
 
   .col-9 {
-    width: 75%;
-    background-color: palevioletred; }
+    width: 75%; }
 
   .col-10 {
-    width: 83.3333333333%;
-    background-color: palevioletred; }
+    width: 83.3333333333%; }
 
   .col-11 {
-    width: 91.6666666667%;
-    background-color: palevioletred; }
+    width: 91.6666666667%; }
 
   .col-12 {
-    width: 100%;
-    background-color: palevioletred; } }
+    width: 100%; } }
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 95%;
@@ -233,14 +221,25 @@ img {
 .hero-image {
   background: url(../img/record-store.jpg);
   background-size: cover;
-  height: 40vh; }
+  height: 40vh;
+  max-height: 500px; }
 
 #hero {
   text-align: center; }
+
+.main-nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; }
+  .main-nav ul {
+    padding-left: 0px; }
 
 .gallery-image {
   border: 1px;
   padding: 1rem;
   text-align: center; }
+
+.widget {
+  padding: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */

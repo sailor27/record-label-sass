@@ -10,7 +10,6 @@
     @for $i from 1 through $grid-columns {
       .col-#{$i} {
         width: 100% / $grid-columns * $i;
-        background-color: palevioletred;  
       }
   }
 }
