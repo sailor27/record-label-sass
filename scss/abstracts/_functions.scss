@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+//
+
+// Create 12 column grid classes for screens 399px wide or smaller
+@media #{$breakpoint-small} {
+    .wrapper{
+      width: 100%;
+    }
+    @for $i from 1 through $grid-columns {
+      .col-#{$i} {
+        width: 100% / $grid-columns * $i;
+        background-color: palevioletred;  
+      }
+  }
+}
+
+// Create 12 column grid classes for screens 400px-1199px wide
+@media #{$breakpoint-medium} {
+  .wrapper{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+// Create 12 column grid classes for screens 1200px wide and larger
+@media #{$breakpoint-large} {
+  .wrapper{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}

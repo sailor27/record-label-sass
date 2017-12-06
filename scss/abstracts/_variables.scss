@@ -1,0 +1,22 @@
+
+/// Container's maximum width
+/// @type Length
+$grid-max-width: 1180px !default;
+
+$breakpoint-small: "only screen and (max-width: 767px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 991px)";
+// $breakpoints: (
+//   'small': 320px,
+//   'medium': 768px,
+//   'large': 1024px,
+// ) !default;
+
+
+// grid variables
+$grid-columns: 12;
+
+
+// // breakpoints
+// $breakpoint-small: "only screen and (min-width: 20em)";
+// $breakpoint-medium: "only screen and (min-width: 30em)";

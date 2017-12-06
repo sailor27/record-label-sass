@@ -1,0 +1,19 @@
+/* For testing only */
+
+body{
+  margin: 0;
+}
+header{
+  text-align: center;
+}
+li{
+  display: inline;
+  list-style: none;
+}
+ul{
+  list-style: none;
+}
+
+form{
+  clear: both;
+}

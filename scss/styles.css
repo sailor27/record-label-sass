@@ -1,0 +1,246 @@
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed #000; }
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%; }
+
+  .col-1 {
+    width: 8.3333333333%;
+    background-color: palevioletred; }
+
+  .col-2 {
+    width: 16.6666666667%;
+    background-color: palevioletred; }
+
+  .col-3 {
+    width: 25%;
+    background-color: palevioletred; }
+
+  .col-4 {
+    width: 33.3333333333%;
+    background-color: palevioletred; }
+
+  .col-5 {
+    width: 41.6666666667%;
+    background-color: palevioletred; }
+
+  .col-6 {
+    width: 50%;
+    background-color: palevioletred; }
+
+  .col-7 {
+    width: 58.3333333333%;
+    background-color: palevioletred; }
+
+  .col-8 {
+    width: 66.6666666667%;
+    background-color: palevioletred; }
+
+  .col-9 {
+    width: 75%;
+    background-color: palevioletred; }
+
+  .col-10 {
+    width: 83.3333333333%;
+    background-color: palevioletred; }
+
+  .col-11 {
+    width: 91.6666666667%;
+    background-color: palevioletred; }
+
+  .col-12 {
+    width: 100%;
+    background-color: palevioletred; } }
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 95%;
+    max-width: 1180px; }
+
+  .col-md-1 {
+    width: 8.3333333333%; }
+
+  .col-md-2 {
+    width: 16.6666666667%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-4 {
+    width: 33.3333333333%; }
+
+  .col-md-5 {
+    width: 41.6666666667%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-7 {
+    width: 58.3333333333%; }
+
+  .col-md-8 {
+    width: 66.6666666667%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-10 {
+    width: 83.3333333333%; }
+
+  .col-md-11 {
+    width: 91.6666666667%; }
+
+  .col-md-12 {
+    width: 100%; } }
+@media only screen and (min-width: 991px) {
+  .wrapper {
+    width: 95%;
+    max-width: 1180px; }
+
+  .col-lg-1 {
+    width: 8.3333333333%; }
+
+  .col-lg-2 {
+    width: 16.6666666667%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.3333333333%; }
+
+  .col-lg-5 {
+    width: 41.6666666667%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.3333333333%; }
+
+  .col-lg-8 {
+    width: 66.6666666667%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.3333333333%; }
+
+  .col-lg-11 {
+    width: 91.6666666667%; }
+
+  .col-lg-12 {
+    width: 100%; } }
+.wrapper,
+.row {
+  *zoom: 1; }
+  .wrapper:before,
+  .row:before, .wrapper:after,
+  .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after,
+  .row:after {
+    clear: both; }
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+header, nav, section, footer {
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+/**
+ * Basic typography style for copy text
+ */
+.wrapper {
+  width: 100vw;
+  margin: 0 auto; }
+
+.wrapper,
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.row {
+  width: 100%; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */ }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap; }
+
+/**
+ * Hide element while making it readable for screen readers
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.hero-image {
+  background: url(../img/record-store.jpg);
+  background-size: cover;
+  height: 40vh; }
+
+#hero {
+  text-align: center; }
+
+.gallery-image {
+  border: 1px;
+  padding: 1rem;
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
