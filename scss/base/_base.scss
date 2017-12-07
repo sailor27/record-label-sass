@@ -13,20 +13,21 @@ html {
 header, nav, section, footer{
   width: 100%;
 }
+h1{
+  @include font-Bench-Nine;
+}
 
 img{
   max-width: 100%;
 }
-h1 {
-  text-align: center;
-}
+
 li, ul {
   list-style: none;
   display: inline;
 }
 
 footer {
-  background-color: $aqua;
+  background-color: $papaya;
   min-height: 3vh;
     a{
       color: white;

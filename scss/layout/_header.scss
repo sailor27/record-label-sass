@@ -5,6 +5,7 @@
   background: url(../img/record-store.jpg);
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
   height: 40vh;
   max-height: 500px;
   position: relative;
@@ -15,15 +16,20 @@
     }
 }
 #hero{
+  position: relative;
   text-align: center;
+  color: white;
     h1{
+      @include font-Bench-Nine;
+      @include hero;
       position: absolute;
       top: 20vh;
-      left: 20vw;
+      left: 15vw;
     }
     h5{
+      @include font-Assistant-bold;
       position: absolute;
-      top: 23vh;
-      left: 20vw;
+      top: 28vh;
+      left: 16vw;
     }
 }

@@ -4,18 +4,32 @@
 .logo-img {
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    @include aspect-ratio(1,1);
 }
 
+.navbar-toggler {
+  background-color: $aqua;
+}
+.navbar-collapse li{
+  &:hover{
+  background-color: rgba(0, 143, 149, 0.5);
+  }
+}
 .main-nav {
   margin-left: auto;
   margin-right: auto;
   width: auto;
     & ul {
       padding-left: 0px;
+      @include font-Assistant-bold;
       & .nav-link {
         color: white;
         text-decoration: none;
         list-style: none;
+      }
+      & li{
+        padding:0  2vw;
       }
     }
 }

@@ -17,15 +17,63 @@
     clear: both;
   }
 }
-
+// centering
 @mixin push--auto {
     margin: {
         left: auto;
         right: auto;
     }
 }
+// fonts
+@mixin font-Bench-Nine{
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+}
+@mixin hero {
+  font-weight: bold;
+  font-size: 7em;
+  text-shadow: 2px 2px $papaya;
+}
 
+@mixin font-Assistant-bold{
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+}
+// widgets
 @mixin widget {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0,0,0,0.16);
   padding-bottom: 1vh;
 }
+
+@mixin main-object {
+  border-bottom: 1px solid rgba(0,0,0,0.16);
+  padding-bottom: 1vh;
+}
+
+@mixin common-format {
+  padding: 1em;
+}
+
+@mixin truncate($truncation-boundary) {
+   max-height: $truncation-boundary;
+  //  white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+ @mixin aspect-ratio($width, $height) {
+   position: relative;
+   &:before {
+     display: block;
+     content: ";)";
+     width: 100%;
+     padding-top: ($height / $width) * 100%;
+   }
+   > .content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+   }
+ }

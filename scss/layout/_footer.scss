@@ -12,3 +12,9 @@
 .sign-up-form{
   @include push--auto;
 }
+
+.sign-up-md-up {
+ padding-top: 2em;
+ padding-left: 2em;
+ border-left: 1px solid rgba(0,0,0,0.16);
+}

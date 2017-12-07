@@ -1,11 +1,9 @@
 
 .sidebar{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 .widget {
   padding: 1rem;
-
-  // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .widget-text{
   @include widget;
@@ -14,6 +12,16 @@
 .widget-img{
   @include widget;
 }
-.widget-col{
+.col-text{
   padding:1rem;
+  padding-top: 0px;
+  @media #{$breakpoint-small} {
+    @include truncate(500px);
+  }
+  @media #{$breakpoint-medium} {
+    @include truncate(300px);
+  }
+  @media #{$breakpoint-large} {
+    @include truncate(150px);
+  }
 }

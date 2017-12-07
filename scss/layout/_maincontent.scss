@@ -1,5 +1,36 @@
 .gallery-image {
   border: 1px;
   padding: 1rem;
-  text-align: center;
+  & h4{
+    font-size: 1.2em;
+    text-align: center;
+  }
+  & p {
+    padding-left: .3rem;
+    font-size: .7em;
+    margin-bottom: 0px;
+    // line-height: 1em;
+  }
+}
+
+.main-object {
+  @include main-object;
+}
+
+.main-blog {
+  @include common-format;
+
+  & .main-blog-image{
+    @include common-format;
+    & img{
+      // border: 3px solid rgba(0,0,0,0.16);
+    }
+  }
+
+  & .main-blog-text {
+    @include common-format;
+    & h1 {
+      text-align: left;
+    }
+  }
 }
