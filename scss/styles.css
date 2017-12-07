@@ -44,7 +44,7 @@
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 95%;
-    max-width: 100vw; }
+    max-width: 1800px; }
 
   .col-md-1 {
     width: 8.3333333333%; }
@@ -84,7 +84,7 @@
 @media only screen and (min-width: 991px) {
   .wrapper {
     width: 95%;
-    max-width: 100vw; }
+    max-width: 1800px; }
 
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -187,7 +187,7 @@ li {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 100vw;
+  max-width: 1800px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -240,6 +240,51 @@ li {
   width: auto; }
   .main-nav ul {
     padding-left: 0px; }
+
+#drop-down ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 767px;
+  margin: 20px; }
+#drop-down ul li {
+  display: block;
+  padding: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all .5s;
+  opacity: 0; }
+#drop-down ul li:hover {
+  background: #ccc; }
+#drop-down ul li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+#drop-down label:before {
+  height: 2px;
+  width: 20px;
+  background: #333;
+  display: inline-block;
+  content: "";
+  box-shadow: 0px -5px 0px 0px  #333, 0px -10px 0px 0px #333;
+  margin-right: 10px;
+  transition: all .5s;
+  position: relative;
+  opacity: 1; }
+#drop-down label {
+  display: block;
+  padding: 10px;
+  color: white;
+  cursor: pointer; }
+#drop-down input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute; }
+#drop-down #collapse:not(:checked) {
+  background-color: blue; }
+#drop-down #collapse:checked ~ li {
+  margin-top: 0;
+  opacity: 1; }
+#drop-down #collapse:checked + label:before {
+  position: relative;
+  opacity: 0.5; }
 
 .gallery-image {
   border: 1px;
