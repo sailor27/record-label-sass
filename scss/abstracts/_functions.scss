@@ -8,7 +8,7 @@
       width: 100%;
     }
     @for $i from 1 through $grid-columns {
-      .col-#{$i} {
+      .coll-#{$i} {
         width: 100% / $grid-columns * $i;
       }
   }
@@ -20,7 +20,7 @@
     max-width: $grid-max-width;
   }
   @for $i from 1 through $grid-columns {
-    .col-md-#{$i} {
+    .coll-md-#{$i} {
       width: 100% / $grid-columns * $i;
     }
   }
@@ -32,7 +32,7 @@
     max-width: $grid-max-width;
   }
   @for $i from 1 through $grid-columns {
-    .col-lg-#{$i} {
+    .coll-lg-#{$i} {
       width: 100% / $grid-columns * $i;
     }
   }
