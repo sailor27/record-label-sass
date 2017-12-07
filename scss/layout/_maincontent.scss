@@ -13,6 +13,12 @@
   }
 }
 
+.main-section h4, h3{
+    @include font-Bench-Nine;
+    font-size: 1.75em;
+}
+
+
 .main-object {
   @include main-object;
 }
@@ -22,9 +28,6 @@
 
   & .main-blog-image{
     @include common-format;
-    & img{
-      // border: 3px solid rgba(0,0,0,0.16);
-    }
   }
 
   & .main-blog-text {

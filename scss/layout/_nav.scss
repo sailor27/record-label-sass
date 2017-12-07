@@ -8,12 +8,15 @@
     @include aspect-ratio(1,1);
 }
 
-.navbar-toggler {
-  background-color: $aqua;
+.navbar-toggler{
+  &:hover{
+  background-color: $papaya;
+  }
 }
 .navbar-collapse li{
+  @include font-Assistant-bold;
   &:hover{
-  background-color: rgba(0, 143, 149, 0.5);
+  background-color: rgba(226, 78, 66, 0.5);
   }
 }
 .main-nav {
@@ -35,9 +38,17 @@
 }
 .secondary-nav {
   justify-content: center;
-  font-size: 1.25em;
+  font-size: 1.5em;
+    & .social i{
+      font-size: 1.65em;
+    }
+  @media #{$breakpoint-medium}{
+    font-size: 1em;
+  }
+  @media #{$breakpoint-large}{
+    font-size: 1.35em;
+  }
 }
-
 .accent-color{
   background-color: $papaya;
 }

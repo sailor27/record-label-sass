@@ -117,18 +117,6 @@
 
   .coll-lg-12 {
     width: 100%; } }
-.wrapper,
-.row {
-  *zoom: 1; }
-  .wrapper:before,
-  .row:before, .wrapper:after,
-  .row:after {
-    content: " ";
-    display: table; }
-  .wrapper:after,
-  .row:after {
-    clear: both; }
-
 /**
  * Set up a decent box model on the root element
  */
@@ -153,6 +141,11 @@ img {
 li, ul {
   list-style: none;
   display: inline; }
+
+p {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
+  font-size: 1em; }
 
 footer {
   background-color: #E24E42;
@@ -281,11 +274,14 @@ footer {
     right: 0;
     bottom: 0; }
 
-.navbar-toggler {
-  background-color: #008F95; }
+.navbar-toggler:hover {
+  background-color: #E24E42; }
 
-.navbar-collapse li:hover {
-  background-color: rgba(0, 143, 149, 0.5); }
+.navbar-collapse li {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600; }
+  .navbar-collapse li:hover {
+    background-color: rgba(226, 78, 66, 0.5); }
 
 .main-nav {
   margin-left: auto;
@@ -304,7 +300,15 @@ footer {
 
 .secondary-nav {
   justify-content: center;
-  font-size: 1.25em; }
+  font-size: 1.5em; }
+  .secondary-nav .social i {
+    font-size: 1.65em; }
+  @media only screen and (min-width: 768px) {
+    .secondary-nav {
+      font-size: 1em; } }
+  @media only screen and (min-width: 991px) {
+    .secondary-nav {
+      font-size: 1.35em; } }
 
 .accent-color {
   background-color: #E24E42; }
@@ -319,6 +323,11 @@ footer {
     padding-left: .3rem;
     font-size: .7em;
     margin-bottom: 0px; }
+
+.main-section h4, h3 {
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  font-size: 1.75em; }
 
 .main-object {
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);

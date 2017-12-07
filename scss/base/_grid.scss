@@ -5,7 +5,6 @@
 }
 .wrapper,
 .row {
-  @extend %clearfix;
   display: flex;
   flex-wrap: wrap;
 }
