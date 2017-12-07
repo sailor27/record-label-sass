@@ -153,6 +153,12 @@ li, ul {
   list-style: none;
   display: inline; }
 
+footer {
+  background-color: #008F95;
+  min-height: 3vh; }
+  footer a {
+    color: white; }
+
 /**
  * Basic typography style for copy text
  */
@@ -274,7 +280,34 @@ li, ul {
   padding: 1rem;
   text-align: center; }
 
+.sidebar {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
 .widget {
   padding: 1rem; }
+
+.widget-text {
+  border-bottom: 1px solid;
+  padding-bottom: 1vh; }
+
+.widget-img {
+  border-bottom: 1px solid;
+  padding-bottom: 1vh; }
+
+.widget-col {
+  padding: 1rem; }
+
+.footer-nav {
+  margin-left: auto;
+  margin-right: auto; }
+
+.sign-up {
+  display: flex;
+  width: 100%;
+  padding: 10px; }
+
+.sign-up-form {
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=styles.css.map */

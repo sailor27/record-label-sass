@@ -1,3 +1,19 @@
+
+.sidebar{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 .widget {
   padding: 1rem;
+
+  // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.widget-text{
+  @include widget;
+}
+
+.widget-img{
+  @include widget;
+}
+.widget-col{
+  padding:1rem;
 }

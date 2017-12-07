@@ -137,18 +137,22 @@
           <div class="sidebar coll-12 coll-md-4 coll-lg-4">
             <div class="row">
               <div class="widget coll-12 coll-md-12 coll-lg-12">
-                <h3>Large info</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <div class="widget-text">
+                  <h3>Large info</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
               </div>
               <div class="widget coll-12 coll-md-12 coll-lg-12">
-                <img src="img/record-player.jpg" alt="">
+                <div class="widget-img">
+                  <img src="img/record-player.jpg" alt="">
+                </div>
               </div>
               <div class="widget coll-12 coll-md-12 coll-lg-12">
                 <div class="row">
-                  <div class="widget coll-6 coll-md-6 coll-lg-6">
+                  <div class="widget-col coll-6 coll-md-6 coll-lg-6">
                     <img src="img/record-player.jpg" alt="">
                   </div>
-                  <div class="widget coll-6 coll-md-6 coll-lg-6">
+                  <div class="widget-col coll-6 coll-md-6 coll-lg-6">
                     <p>Sidebar Widget</p>
                     <p>This is a sidebar component with text and image side by side</p>
                   </div>
@@ -162,28 +166,31 @@
         <div class="row">
           <div class="coll-12 coll-md-6 site-map">
             <div class="row">
+
               <div class="footer-nav coll-6 coll-md-6 coll-lg-6">
-                <ul>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                </ul>
+                <nav class="navbar navbar-expand navbar-light ">
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
+                    </div>
+                </nav>
               </div>
               <div class="footer-nav coll-6 coll-md-6 coll-lg-6">
-                <ul>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link1</a></li>
-                </ul>
+                <nav class="navbar navbar-expand navbar-light ">
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
+                      <a class="nav-item nav-link" href="#">Sign In</a>
+                      <a class="nav-item nav-link" href="#">Account</a>
+                    </div>
+                </nav>
               </div>
             </div>
           </div>
-          <div class="coll-12 coll-md-6">
-            <form class="sign-up">
+          <div class="coll-12 coll-md-6 sign-up footer-nav">
+            <form class="sign-up-form">
               <label for="input">Join our mailing list!</label>
               <input type="text" name="email" value="email" placeholder="Email Address">
               <button type="submit" name="button">Sign Up</button>

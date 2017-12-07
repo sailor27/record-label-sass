@@ -24,3 +24,11 @@ li, ul {
   list-style: none;
   display: inline;
 }
+
+footer {
+  background-color: $aqua;
+  min-height: 3vh;
+    a{
+      color: white;
+    }
+}
