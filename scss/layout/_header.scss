@@ -4,9 +4,26 @@
 .hero-image{
   background: url(../img/record-store.jpg);
   background-size: cover;
+  background-position: center;
   height: 40vh;
   max-height: 500px;
+  position: relative;
+    h1, h5{
+      @media #{$breakpoint-small}{
+        display: none;
+      }
+    }
 }
 #hero{
   text-align: center;
+    h1{
+      position: absolute;
+      top: 20vh;
+      left: 20vw;
+    }
+    h5{
+      position: absolute;
+      top: 23vh;
+      left: 20vw;
+    }
 }

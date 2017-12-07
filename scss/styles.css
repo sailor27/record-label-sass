@@ -157,8 +157,7 @@ li, ul {
  * Basic typography style for copy text
  */
 .wrapper {
-  width: 100vw;
-  margin: 0 auto; }
+  width: 100%; }
 
 .wrapper,
 .row {
@@ -166,7 +165,9 @@ li, ul {
   flex-wrap: wrap; }
 
 .row {
-  width: 100%; }
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 /**
  * Clear inner floats
@@ -224,11 +225,24 @@ li, ul {
 .hero-image {
   background: url(../img/record-store.jpg);
   background-size: cover;
+  background-position: center;
   height: 40vh;
-  max-height: 500px; }
+  max-height: 500px;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .hero-image h1, .hero-image h5 {
+      display: none; } }
 
 #hero {
   text-align: center; }
+  #hero h1 {
+    position: absolute;
+    top: 20vh;
+    left: 20vw; }
+  #hero h5 {
+    position: absolute;
+    top: 23vh;
+    left: 20vw; }
 
 .logo {
   display: flex; }
@@ -243,9 +257,17 @@ li, ul {
   width: auto; }
   .main-nav ul {
     padding-left: 0px; }
+    .main-nav ul .nav-link {
+      color: white;
+      text-decoration: none;
+      list-style: none; }
 
 .secondary-nav {
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1.25em; }
+
+.accent-color {
+  background-color: #E24E42; }
 
 .gallery-image {
   border: 1px;

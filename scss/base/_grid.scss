@@ -1,8 +1,7 @@
 
 //GRID SETUP/STYLING
 .wrapper{
-  width: 100vw;
-  margin: 0 auto;
+  width: 100%;
 }
 .wrapper,
 .row {
@@ -13,4 +12,6 @@
 
 .row{
   width: 100%;
+  margin-left:0;
+  margin-right: 0;
 }
